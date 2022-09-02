@@ -20,10 +20,15 @@ $ cd ansible_chkrootkit
 $ ansible-playbook ansible_chkrootkit.yaml
 
 ## 测试chkrootkit运行
-
+测试chkrootkit运行
 ```
 $ sh  /opt/chkrootkit-0.55/scripts/chkrootkit_exec.sh
+```
+查看chkrootkit运行结果
+```
 $ cat /var/log/chkrootkit/chkrootkit.log
 ```
-## 将chkrootkit加入crontab定时计划
-
+查看chkrootkit cron设定状况
+```
+$ crontab -l
+```
